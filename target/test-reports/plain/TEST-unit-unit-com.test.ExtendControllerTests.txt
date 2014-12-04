@@ -1,0 +1,35 @@
+Testsuite: com.test.ExtendControllerTests
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.611 sec
+------------- Standard Output ---------------
+--Output from testList--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testList--
+------------- ---------------- ---------------
+
+Testcase: testList took 0.61 sec
+	FAILED
+Assertion failed: 
+
+assert controller.list() == [extend1, extend2, extend3]
+       |          |      |   |        |        |
+       |          |      |   |        |        com.test.Extend : 3
+       |          |      |   |        com.test.Extend : 2
+       |          |      |   com.test.Extend : 1
+       |          |      false
+       |          [com.test.Extend : 1, com.test.Extend : 2, com.test.Extend : 3]
+       com.test.ExtendController@5c018c9
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert controller.list() == [extend1, extend2, extend3]
+       |          |      |   |        |        |
+       |          |      |   |        |        com.test.Extend : 3
+       |          |      |   |        com.test.Extend : 2
+       |          |      |   com.test.Extend : 1
+       |          |      false
+       |          [com.test.Extend : 1, com.test.Extend : 2, com.test.Extend : 3]
+       com.test.ExtendController@5c018c9
+
+	at com.test.ExtendControllerTests.testList(ExtendControllerTests.groovy:31)
+

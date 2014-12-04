@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="localhost.localdomain" id="0" name="ExtendControllerTests" package="com.test" tests="1" time="0.611" timestamp="2014-12-04T15:53:47">
+      <properties />
+
+      <testcase classname="com.test.ExtendControllerTests" name="testList" time="0.61">
+          <failure message="Assertion failed: &#xa;&#xa;assert controller.list() == [extend1, extend2, extend3]&#xa;       |          |      |   |        |        |&#xa;       |          |      |   |        |        com.test.Extend : 3&#xa;       |          |      |   |        com.test.Extend : 2&#xa;       |          |      |   com.test.Extend : 1&#xa;       |          |      false&#xa;       |          [com.test.Extend : 1, com.test.Extend : 2, com.test.Extend : 3]&#xa;       com.test.ExtendController@5c018c9&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert controller.list() == [extend1, extend2, extend3]
+       |          |      |   |        |        |
+       |          |      |   |        |        com.test.Extend : 3
+       |          |      |   |        com.test.Extend : 2
+       |          |      |   com.test.Extend : 1
+       |          |      false
+       |          [com.test.Extend : 1, com.test.Extend : 2, com.test.Extend : 3]
+       com.test.ExtendController@5c018c9
+
+	at com.test.ExtendControllerTests.testList(ExtendControllerTests.groovy:31)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testList--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testList--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
